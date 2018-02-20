@@ -1,0 +1,40 @@
+.ds-resources-downloads__container{
+  @include grid-container;
+
+  .ds-resouces-downloads__col {
+    @include grid-column(6);
+      height: 100px;
+      border: 1px solid ds-color(neutral, 100);
+      border-radius: 4px;
+      margin: 0 8px 0 0;
+      padding: 0 ds-spacing(base);
+      box-sizing: border-box;
+      
+    .ds-resources-downloads__item {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin: none;
+      
+      img {
+        width: 20%;
+        align-self:flex-start;
+        margin-right: 24px;
+      }
+
+      .ds-caption {
+        margin: 0;
+
+        a {
+          font-size: 13px;
+          color: ds-color(neutral,900);
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .08);
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+$ds-header-height: 80px;
+$ds-left-nav-width: ds-layout-width(left-nav, base);
+
+.ds-grid {
+  display: grid;
+  grid-template-columns: $ds-left-nav-width 1fr;
+  grid-template-areas: 
+    "ds-left-nav    ds-header"
+    "ds-left-nav    ds-content";
+  grid-gap: 0;
+  grid-template-rows: $ds-header-height 1fr;
+} 
